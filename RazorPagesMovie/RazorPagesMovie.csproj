@@ -8,17 +8,22 @@
 
   <ItemGroup>
     <Compile Remove="Pages\NewFolder1\**" />
-    <Compile Remove="Pages\NewFolder\**" />
+    <Compile Remove="Pages\NewFolder2\**" />
     <Content Remove="Pages\NewFolder1\**" />
-    <Content Remove="Pages\NewFolder\**" />
+    <Content Remove="Pages\NewFolder2\**" />
     <EmbeddedResource Remove="Pages\NewFolder1\**" />
-    <EmbeddedResource Remove="Pages\NewFolder\**" />
+    <EmbeddedResource Remove="Pages\NewFolder2\**" />
     <None Remove="Pages\NewFolder1\**" />
-    <None Remove="Pages\NewFolder\**" />
+    <None Remove="Pages\NewFolder2\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\NewFolder2\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.4" />
   </ItemGroup>
 
 </Project>
